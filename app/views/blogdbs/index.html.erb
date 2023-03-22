@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Blogdbs</h1>
+
+<div id="blogdbs">
+  <% @blogdbs.each do |blogdb| %>
+    <%= render blogdb %>
+    <p>
+      <%= link_to "Show this blogdb", blogdb %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New blogdb", new_blogdb_path %>
